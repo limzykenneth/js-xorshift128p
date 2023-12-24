@@ -66,7 +66,7 @@ function xorshift128p(){
 
 console.time();
 
-for(let i=0; i<100; i++){
+for(let i=0; i<1000000; i++){
 	const n = xorshift128p();
 	console.log(
 		n[0] * 2.3283064365386963e-10 + (n[1] >>> 12) * 2.220446049250313e-16
